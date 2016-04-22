@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yazan.wapp" >
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name=".PopUp"
+            android:label="@string/title_activity_pop_up">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Jerusalem"
+            android:label="@string/title_activity_jerusalem" >
+        </activity>
+        <activity
+            android:name=".Ramallah"
+            android:label="@string/title_activity_ramallah" >
+        </activity>
+        <activity
+            android:name=".Nablus"
+            android:label="@string/title_activity_nablus" >
+        </activity>
+        <activity
+            android:name=".Salfit"
+            android:label="@string/title_activity_salfit" >
+        </activity>
+        <activity
+            android:name=".Jenin"
+            android:label="@string/title_activity_jenin" >
+        </activity>
+        <activity
+            android:name=".Hebron"
+            android:label="@string/title_activity_hebron" >
+        </activity>
+    </application>
+
+</manifest>

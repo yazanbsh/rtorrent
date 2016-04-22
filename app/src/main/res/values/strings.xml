@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Weather App</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_pop_up">Cities</string>
+    <string name="title_activity_jerusalem"></string>
+    <string name="title_activity_ramallah">Ramallah</string>
+    <string name="title_activity_nablus">Nablus</string>
+    <string name="title_activity_salfit">Salfit</string>
+    <string name="title_activity_jenin">Jenin</string>
+    <string name="title_activity_hebron">Hebron</string>
+</resources>

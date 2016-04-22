@@ -1,0 +1,290 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.yazan.wapp.Hebron"
+    android:background="@drawable/weather4"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day"
+        android:id="@+id/textView"
+        android:layout_alignTop="@+id/minLable"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max"
+        android:id="@+id/maxLable"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_alignTop="@+id/minLable"
+        android:layout_toLeftOf="@+id/minLable"
+        android:layout_toStartOf="@+id/minLable" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Min"
+        android:id="@+id/minLable"
+        android:layout_alignTop="@+id/pressureLable"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pressure"
+        android:id="@+id/pressureLable"
+        android:layout_marginRight="19dp"
+        android:layout_marginEnd="19dp"
+        android:layout_alignTop="@+id/humidtyLable"
+        android:layout_toLeftOf="@+id/humidtyLable"
+        android:layout_toStartOf="@+id/humidtyLable" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidty"
+        android:id="@+id/humidtyLable"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day1"
+        android:id="@+id/day1Text"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day2"
+        android:id="@+id/day2Text"
+        android:layout_below="@+id/day1Text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day3"
+        android:id="@+id/day3Text"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/day2Text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day4"
+        android:id="@+id/day4Text"
+        android:layout_below="@+id/day3Text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day5"
+        android:id="@+id/day5Text"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/day4Text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/day1Max"
+        android:layout_alignBottom="@+id/day1Text"
+        android:layout_alignLeft="@+id/maxLable"
+        android:layout_alignStart="@+id/maxLable" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/day1Min"
+        android:layout_alignBottom="@+id/day1Max"
+        android:layout_toRightOf="@+id/maxLable"
+        android:layout_toEndOf="@+id/maxLable" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/day1Pre"
+        android:layout_alignBottom="@+id/day1Min"
+        android:layout_alignLeft="@+id/pressureLable"
+        android:layout_alignStart="@+id/pressureLable" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/day1Hum"
+        android:layout_alignBottom="@+id/day1Pre"
+        android:layout_toRightOf="@+id/pressureLable"
+        android:layout_toEndOf="@+id/pressureLable" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/day2Max"
+        android:layout_above="@+id/day3Text"
+        android:layout_alignLeft="@+id/day1Max"
+        android:layout_alignStart="@+id/day1Max" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/day2Min"
+        android:layout_alignBottom="@+id/day2Max"
+        android:layout_alignLeft="@+id/day1Min"
+        android:layout_alignStart="@+id/day1Min" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/day2Pre"
+        android:layout_alignBottom="@+id/day2Min"
+        android:layout_alignLeft="@+id/day1Pre"
+        android:layout_alignStart="@+id/day1Pre" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/day2Hum"
+        android:layout_alignBottom="@+id/day2Pre"
+        android:layout_toRightOf="@+id/pressureLable"
+        android:layout_toEndOf="@+id/pressureLable" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/day3Max"
+        android:layout_alignBottom="@+id/day3Text"
+        android:layout_alignLeft="@+id/day2Max"
+        android:layout_alignStart="@+id/day2Max" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/day3Min"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/day2Min"
+        android:layout_alignStart="@+id/day2Min" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/day3Pre"
+        android:layout_above="@+id/day4Text"
+        android:layout_alignLeft="@+id/day2Pre"
+        android:layout_alignStart="@+id/day2Pre" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/day3Hum"
+        android:layout_alignBottom="@+id/day3Pre"
+        android:layout_toRightOf="@+id/pressureLable"
+        android:layout_toEndOf="@+id/pressureLable" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/day4Hum"
+        android:layout_above="@+id/day5Text"
+        android:layout_toRightOf="@+id/pressureLable"
+        android:layout_alignRight="@+id/day3Hum"
+        android:layout_alignEnd="@+id/day3Hum" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/day4Pre"
+        android:layout_alignBottom="@+id/day4Hum"
+        android:layout_alignLeft="@+id/day3Pre"
+        android:layout_alignStart="@+id/day3Pre" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/day4Min"
+        android:layout_alignTop="@+id/day4Pre"
+        android:layout_alignLeft="@+id/day3Min"
+        android:layout_alignStart="@+id/day3Min" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/day4Max"
+        android:layout_above="@+id/day5Text"
+        android:layout_alignRight="@+id/day3Max"
+        android:layout_alignEnd="@+id/day3Max" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/day5Max"
+        android:layout_alignBottom="@+id/day5Text"
+        android:layout_alignLeft="@+id/day4Max"
+        android:layout_alignStart="@+id/day4Max" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/day5Min"
+        android:layout_alignTop="@+id/day5Max"
+        android:layout_alignLeft="@+id/day4Min"
+        android:layout_alignStart="@+id/day4Min" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/day5Pre"
+        android:layout_alignBottom="@+id/day5Min"
+        android:layout_alignLeft="@+id/day4Pre"
+        android:layout_alignStart="@+id/day4Pre" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/day5Hum"
+        android:layout_alignBottom="@+id/day5Pre"
+        android:layout_toRightOf="@+id/pressureLable"
+        android:layout_toEndOf="@+id/pressureLable" />
+
+</RelativeLayout>
